@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/scss/main.scss";
 .section {
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) inset;
+    // box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) inset;
 }
 .container {
     margin: 0 auto;

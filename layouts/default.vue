@@ -1,8 +1,14 @@
 <template>
-    <div>
-        <Navbar/>
-        <nuxt/>
-    </div>
+    <section class="hero is-bold">
+        <div class="hero-head">
+            <Navbar/>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <nuxt/>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
