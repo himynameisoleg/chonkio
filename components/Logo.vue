@@ -1,6 +1,6 @@
 <template>
     <div class="Logo-container">
-        <div class="Logo-circle"/>
+        <div class="Logo-circle" />
     </div>
 </template>
 
@@ -17,8 +17,5 @@
         border-radius: 100%;
         background: linear-gradient(0.25turn, $m-pink, $m-orange);
     }
-
 }
-
-
 </style>

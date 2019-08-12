@@ -14,14 +14,15 @@
                 <span></span>
             </div>
         </div>
-
-        <div class="navbar-menu" :class="{ 'is-active': showNav }">
-            <div class="navbar-end">
-                <a class="navbar-item" href="/about">About</a>
-                <a class="navbar-item" href="/path">Path</a>
-                <a class="navbar-item" href="/blog">Blog</a>
+        <transition name="fade">
+            <div class="navbar-menu" :class="{ 'is-active': showNav }">
+                <div class="navbar-end" @click="showNav = !showNav">
+                    <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
+                    <nuxt-link class="navbar-item" to="/guides">Guides</nuxt-link>
+                    <nuxt-link class="navbar-item" to="/posts">Posts</nuxt-link>
+                </div>
             </div>
-        </div>
+        </transition>
     </nav>
 </template>
 

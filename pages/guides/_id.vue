@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.content }}</p>
+        <h1>{{ guide.title }}</h1>
+        <p>{{ guide.content }}</p>
     </div>
 </template>
 
@@ -10,19 +10,19 @@ export default {
     data() {
         return {
             id: this.$route.params.id, // id is _id whatever we called the _something.vue
-            posts: [
+            guides: [
                 {
-                    id: 0,
-                    title: "Post 1",
-                    content: "MILK MILK"
+                    id: "1",
+                    title: "Guide 1",
+                    content: "OMG"
                 },
                 {
-                    id: 1,
+                    id: "2",
                     title: "Pos 2",
                     content: ""
                 },
                 {
-                    id: 2,
+                    id: "3",
                     title: "",
                     content: ""
                 }
@@ -30,8 +30,8 @@ export default {
         };
     },
     computed: {
-        post() {
-            return this.posts.find(post => this.id);
+        guide() {
+            return this.guides.find(guide => guide.id);
         }
     }
 };
