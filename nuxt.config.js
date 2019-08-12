@@ -1,16 +1,8 @@
-const ghPages = {
-  router: {
-    base: "/nuxt-githubpages/"
-  }
-};
-
-const routerBase = process.env.DEPLOY_ENV === "GH_PAGES" ? ghPages : "";
+const routerBase = process.env.DEPLOY_ENV === "GH_PAGES" ? { router: { base: "/nuxt-githubpages/" }} : {};
 
 export default {
   mode: "universal",
-  router: {
-    base: routerBase
-  },
+  ...routerBase,
   /*
    ** Headers of the page
    */
