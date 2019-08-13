@@ -4,7 +4,8 @@
             <div>
                 <!-- <logo/> -->
                 <h1 class="title has-text-white">chonk.io</h1>
-                <h2 class="subtitle has-text-white">{{ `dedicated to eveything \nclick, clack and chonk` }}</h2>
+                <!-- <h2 class="subtitle has-text-white">{{ `dedicated to eveything \nclick, clack and chonk` }}</h2> -->
+                <h2 class="subtitle has-text-white">{{ `well that \nescalated quickly` }}</h2>
             </div>
 
             <div class="">

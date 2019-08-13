@@ -1,9 +1,9 @@
 <template>
     <nav class="navbar has-background-white">
         <div class="navbar-brand">
-            <a class="navbar-item" href="/">
+            <nuxt-link class="navbar-item" to="/">
                 <div class="Logo-circle"></div>
-            </a>
+            </nuxt-link>
             <div
                 class="navbar-burger"
                 @click="showNav = !showNav"
